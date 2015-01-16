@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- change this if your client and server run on different machines! -->
+    <string name="mutibo_server_url">https://10.0.2.2:8443</string>
+
+    <string name="app_name">Mutibo</string>
+    <string name="app_slogan">The game for the movie geeks</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_game">Mutibo!</string>
+    <string name="title_activity_add_set">Add a new movie set</string>
+    <string name="title_facebook_login">Login with Facebook</string>
+    
+    <string name="facebook_app_id">300077793535569</string>
+    
+    <string name="next">Next question</string>
+    <string name="back">Back</string>
+    
+    <string name="main_last_score">Last score: %1$d</string>
+    <string name="main_high_score">High score: %1$d</string>
+    <string name="main_play_game">Play game</string>
+    <string name="main_show_leaderboard">Show Leaderboard</string>
+    <string name="main_logout">Log out</string>
+    
+    <string name="add_set_text">Please input 4 movies, select 1 of them and explain why it is different</string>
+    <string name="add_set_warning">Warning: if a set receives too many negative votes, it can be removed from our system</string>
+    <string name="add_set_search">Search a movie</string>
+    <string name="add_set_hint">Why is the selected movie different?</string>
+    <string name="add_set_submit">Add a set</string>
+    <string name="add_set_submit_message">Set has successfully been added</string>
+    
+    <string name="game_status">Score: %1$d, wrong answers: %2$d</string>
+    <string name="game_question">Which movie is different from the others?</string>
+    <string name="game_submit">Take a guess!</string>
+    <string name="game_rate_prompt">Rate this set</string>
+    <string name="game_vote_up">Vote up</string>
+    <string name="game_vote_down">Vote down</string>
+    <string name="game_voted">Set successfully rated</string>
+    <string name="game_not_voted">You have already rated this set before</string>
+    <string name="game_no_more_sets">There are no more Sets in the system. Looks like, you know them all!</string>
+    
+    <string name="error_game_server_unreachable">Sorry, the game server is not currently available. </string>
+    <string name="error_movie_server_unreachable">Sorry, the movie database server is not currently available. </string>
+    <string name="error_game_play">Please check your connection and come back to the game later.</string>
+    <string name="error_add_set">Please check your connection and try to add the set again.</string>
+
+</resources>

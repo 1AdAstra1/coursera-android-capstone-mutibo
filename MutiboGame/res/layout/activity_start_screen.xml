@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/gameTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:shadowColor="#FFF899"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2.5"
+        android:text="@string/app_name"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFF82E"
+        android:textSize="80dp" />
+
+    <TextView
+        android:id="@+id/gameSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/app_slogan"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#F0A3AD" />
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.courseraproject.mutibo.StartScreenActivity"
+        tools:ignore="MergeRootFrame" >
+    </FrameLayout>
+
+</LinearLayout>

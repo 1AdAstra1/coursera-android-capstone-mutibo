@@ -1,0 +1,134 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:visibility="visible"
+    tools:context="com.courseraproject.mutibo.GameActivity" >
+
+    <TextView
+        android:id="@+id/questionView"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:text="@string/game_question" />
+
+    <RadioGroup
+        android:id="@+id/movieButtonsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical" />
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:enabled="false"
+        android:onClick="submitAnswer"
+        android:text="@string/game_submit" />
+
+    <ImageView
+        android:id="@+id/resultIcon"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:scaleType="center"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:id="@+id/explanationContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:gravity="top"
+        android:orientation="horizontal"
+        android:visibility="invisible"
+        android:weightSum="3" >
+
+        <ImageView
+            android:id="@+id/moviePoster"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerInside" />
+
+        <TextView
+            android:id="@+id/explanationText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:paddingLeft="@dimen/text_description_padding" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ratingButtonsContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1.5"
+        android:paddingBottom="@dimen/com_facebook_tooltip_horizontal_padding"
+        android:paddingTop="@dimen/com_facebook_tooltip_horizontal_padding"
+        android:visibility="invisible" >
+
+        <ImageButton
+            android:id="@+id/voteUpButton"
+            android:src="@drawable/thumb_up"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="rateSet"
+            android:text="@string/game_vote_up" />
+
+        <TextView
+            android:id="@+id/rateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="@dimen/com_facebook_tooltip_horizontal_padding"
+            android:paddingRight="@dimen/com_facebook_tooltip_horizontal_padding"
+            android:text="@string/game_rate_prompt" />
+
+        <ImageButton
+            android:id="@+id/voteDownButton"
+            android:src="@drawable/thumb_down"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="rateSet"
+            android:text="@string/game_vote_down" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/navigationButtonsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1" >
+
+        <Button
+            android:id="@+id/nextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="goToNextSet"
+            android:text="@string/next"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="backToStartScreen"
+            android:text="@string/back"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>
